@@ -1,0 +1,169 @@
+#root{
+    background: #0b2c40;
+}
+.home-page{
+    height: 100vh;
+    position: relative;
+}
+header{
+    height: 300px;
+    position: absolute;
+    right: 170px;
+    bottom: 410px;
+}
+header .title h1{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 60px;
+    color:  #4cced2;
+    font-size: 95px;
+    letter-spacing: 5px;
+    font-family: 'Oxanium', cursive;
+}
+.title-summary p{
+    text-align: left;
+    color: #ddd;
+    font-size:21px;
+    margin: 0;
+}
+main.home{
+    position: absolute;
+    bottom: 200px;
+    right: 440px;
+
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.strength, .nutrition{
+    box-sizing: border-box;
+
+}
+.nutrition{
+    position: relative;
+    left: 100px;
+}
+.strength article p, .nutrition article p{
+    text-align: left;
+    font-size: 19px;
+    color: #ddd;
+    margin-bottom: 33px;
+}
+
+.strength button, .nutrition button{
+    width: 130px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #EB6F48;
+    border: none;
+    border-radius:6px;
+    transition: all 500ms ease-in-out;
+    color: #000;
+    box-shadow: 4px 4px 6px #181818;
+}
+.strength button:hover, .nutrition button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1600px) {
+    header .title h1{
+        font-size: 75px;
+    }
+    header{
+        right: 185px;
+        bottom: 360px;
+    }
+    main.home{
+        right: 320px;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    header{
+        right: 150px;
+        bottom: 360px;
+    }
+    main.home{
+        right: 285px;
+    }
+
+}
+@media only screen and (max-width: 1300px){
+    header{
+        right: 125px;
+        bottom: 320px;
+    }
+    header .title h1{
+        font-size: 55px;
+
+    }
+    main.home{
+        right: 170px;
+    }
+    .strength article p, .nutrition article p{
+        font-size: 17px;
+    }
+    .title-summary p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    header{
+        padding-top: 170px;
+        margin: auto;
+        position: static;
+        width: 100%;
+    }
+    header .title h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    .title-summary p{
+        font-size: 16px;
+        text-align: center;
+      }
+    .strength article p, .nutrition article p{
+        font-size: 14px;
+    }
+    .content {
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 120px;
+    }
+    main.home{
+        right: 0;
+        width: 100%;
+    }
+    .nutrition,.strength{
+        position: static;
+        margin-right: 5px;
+    }
+    .strength button, .nutrition button{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .strength button, .nutrition button{
+        font-size: 14px;
+    }
+    header .title h1{
+        font-size: 35px;
+    }
+    .title-summary p{
+        font-size: 13px;
+    }
+    .strength article p, .nutrition article p{
+        font-size: 14px;
+    }
+    .strength button, .nutrition button{
+        width: 110px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,240 @@
+.strength-sec{
+    background-image: url("../images/benchpress.jpg");
+}
+.banner-section{
+    height: 100vh;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+}
+.banner-section section{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    position: relative;
+
+}
+.banner-section h1{
+    position: absolute;
+    margin-top: 0;
+    color: whitesmoke;
+    font-size: 60px;
+    bottom: 45%;
+    left: 5%;
+}
+.banner-section p{
+    color: #d8d8d8;
+    font-size: 26px;
+    bottom: 30%;
+    left: 5%;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+.grid-repmax{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+}
+.prep{
+    height: 700px;
+    position: relative;
+}
+.prep h2{
+    font-size: 21px;
+    padding-top: 115px;
+    text-align: center;
+    color: #00f3ff;
+}
+.prep ul{
+    margin: 60px auto 100px;
+
+}
+.prep ul li{
+    list-style-type: none;
+    border-left: solid 2px #09d3ac;
+    margin: 30px auto;
+    width:300px;
+    padding-left: 20px;
+    color: #ddd;
+}
+.maxRep > p{
+    text-align: center;
+    font-size: 16px;
+    color: #ddd;
+
+}
+.maxRep{
+    height: 680px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.maxRep #formContainer{
+    text-align: center;
+    display: block;
+    padding-top: 50px;
+}
+#formContainer #repMax{
+    text-align: left;
+    display: inline-block;
+}
+#repMax h1{
+    margin-top: 0;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    color: #00f3ff
+}
+#repMax div input{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #EB6F48;
+    -webkit-border-radius: 0;
+    height: 25px;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100px;
+    transition: width 1s ease;
+    color: #DCA817;
+}
+#repMax div input:not(:placeholder-shown):valid{
+    border-bottom-color: #32d832;
+}
+#repMax div input:not(:placeholder-shown):invalid{
+    border-bottom-color: #af0000;
+    box-shadow: none;
+}
+#repMax div input:placeholder-shown{
+    box-shadow: none;
+}
+#repMax div input:placeholder-shown:focus{
+    border-bottom-color: #DCA817;
+
+}
+#repMax div input:focus{
+    outline: none;
+}
+#repMax div input:nth-child(3){
+    margin-bottom: 30px;
+
+}
+#repMax div label{
+    color: #ddd;
+    font-size: 21px;
+    font-weight: 400;
+}
+#chart-container p:not(#max-info) {
+    color: #ddd;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#lineChart-container{
+    margin: 0 auto 20px;
+    width: 50vw;
+    height: 400px;
+}
+#chart-container{
+    padding-top: 50px;
+    text-align: center;
+}
+#newRepMax,#calculate{
+    height: 40px;
+    width: 120px;
+    font-weight: 500;
+    font-size: 19px;
+    background-color: #347296;
+    border: 3px solid #4bc0e8;
+    color: yellow;
+    transition: box-shadow 5ms ease, opacity 5ms ease;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 4px black;
+}
+#newRepMax:hover,#calculate:hover{
+    opacity: 0.7;
+}
+#newRepMax{
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 1300px){
+    .grid-repmax{
+        display: block;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .banner-section{
+        height: 100vh;
+    }
+    .banner-section h1{
+        bottom:50%;
+    }
+    .banner-section p{
+        bottom: 25%;
+    }
+    .maxRep > p{
+        margin: 0 20px;
+        text-align: left;
+        line-height: 27px;
+    }
+    #lineChart-container{
+        margin: auto;
+        width: 90%;
+    }
+    .maxRep{
+        height: 750px;
+    }
+    #chart-container p:not(#max-info){
+        text-align: left;
+        margin-left:20px;
+        margin-right: 20px;
+    }
+}
+@media  only screen and (max-width: 896px) and (orientation: landscape){
+    .banner-section h1{
+        top: 5%;
+        font-size: 45px;
+    }
+    .banner-section p{
+        top:25%;
+        font-size: 24px;
+    }
+    #chart-container p:not(#max-info){
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 700px){
+    .banner-section h1{
+        bottom:70%;
+    }
+    .banner-section p{
+        bottom: 32%;
+        font-size: 18px;
+    }
+    .maxRep{
+        height: 760px;
+    }
+    #chart-container p:not(#max-info){
+        text-align: left;
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .banner-section h1{
+        top:10%;
+    }
+    .banner-section p{
+        top: 20%;
+
+    }
+    .maxRep{
+        height: 800px;
+    }
+
+}

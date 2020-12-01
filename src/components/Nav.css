@@ -1,0 +1,103 @@
+
+nav ul.full li{
+    display: inline;
+    color: #EBC048;
+    transition: all 300ms ease-in;
+
+}
+nav ul.full a:not(#home) {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 21px;
+    display: inline-block;
+    font-weight: 500;
+}
+nav ul.full li:hover{
+    color: #DCA817;
+
+}
+.active:not(#home){
+    border-bottom: 2px solid #DCA817;
+}
+nav h1{
+    display: inline-block;
+    margin-left: 30px;
+    color: #4cced2;
+    font-family: 'Oxanium', cursive;
+}
+nav ul.full{
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+}
+nav{
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+#nav-bar{
+    position: relative;
+}
+.hamburger-container{
+    position: absolute;
+    top:13px;
+    right: 15px;
+    display: none;
+    z-index: 2;
+
+
+}
+.bar{
+    width: 30px;
+    height: 5px;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    transition: all 500ms ease-in-out;
+}
+.bar1,.bar2{
+    margin-bottom: 5px;
+
+}
+.close .bar1{
+    transform: translateY(8.6px) rotate(137deg);
+    margin-bottom: 0;
+}
+.close .bar2{
+    transform: scale(0);
+    visibility: hidden;
+}
+.close .bar3{
+    transform: translateY(-6.5px) rotate(-137deg);
+
+}
+.nav-container{
+    width: 300px;
+    height: 100vh;
+    background-color: #050505;
+    z-index: 1;
+    position: fixed;
+    top:0;
+    right:0;
+    transition: width 500ms ease-in-out, box-shadow 500ms ease-out;
+}
+nav ul.nav{
+    margin-top: 50px;
+
+}
+nav ul.nav li{
+    color: rgba(38, 199, 253, 0.84);
+    list-style-type: none;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+nav ul.nav a{
+    text-decoration: none;
+}
+nav ul.nav .active li{
+    color: #EBC048;
+}
+@media only screen and (max-width: 1080px){
+    .nav-container{
+        /*transition: box-shadow 500ms ease-out;*/
+    }
+}

@@ -1,0 +1,553 @@
+html{
+    scroll-behavior: smooth;
+}
+.macro-sec{
+    color: #ddd;
+}
+.circle-menu{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #000d42;
+    position: fixed;
+    top: 70%;
+    right: 30px;
+    transition: all 300ms ease-in;
+}
+.bars-container{
+    position: absolute;
+    top:24%;
+    left: 20%;
+}
+.mini-bar{
+    text-align: center;
+    height: 5px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: #1fbbff;
+    margin: 1px auto 6px;
+}
+.mini-bar:nth-child(2){
+    width: 23px;
+    margin-left: 0;
+}
+ul.list-container{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+ul.list-container li{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+ul.list-container li a{
+    text-decoration: none;
+    color: #1fbbff;
+    transition: color 300ms ease-out;
+
+}
+ul.list-container li a:hover{
+    color: #147ba8;
+}
+.nutrition-sec{
+    background-image: url("../images/nutrition.jpg");
+    background-size: contain !important;
+}
+.macro-sec h2, #calorieForm h2{
+    padding-top: 100px;
+    text-align: center;
+    color: #00f3ff;
+}
+.macro-summary{
+  margin: 0 50px 160px;
+}
+.macro-summary h3{
+    text-align: left;
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 40px;
+    color: #09d3ac;
+}
+.macro-summary p{
+    font-size: 18px;
+    line-height: 29px;
+}
+h4{
+    text-align: center;
+    font-size: 19px;
+}
+.carb-types{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    padding: 0 9px;
+}
+.carb-types div h5{
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 65px;
+    padding-left: 20px;
+}
+.carb-types div ul{
+    margin: 0px 20px 50px;
+    padding-left: 0;
+}
+.carb-types div ul li{
+    list-style-type: none;
+
+}
+.carb-types div{
+    padding: 0 20px;
+}
+.carb-types div p{
+    margin-left: 20px;
+
+}
+.answer{
+    margin-bottom: 40px;
+}
+.protein-sec, .fat-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+.info{
+    padding-left: 30px;
+    margin-top: 70px;
+}
+.info p{
+    margin-left: 20px;
+}
+.macro-sec article{
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+article:last-child{
+    padding-bottom: 120px;
+}
+.protein-types,.protein-info,.fat-types{
+    margin: auto;
+}
+.fat-info{
+    padding-right: 100px;
+
+}
+.protein-info p:first-child{
+    margin-left:  0;
+}
+.protein-types ul li, .fat-types ul li{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+.form-container{
+    text-align: center;
+    display: block;
+
+}
+#calorie-calculator{
+    text-align: left;
+    display: inline-block;
+    height: 450px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#calorie-calculator label{
+    color: #EB6F48;
+}
+#calorie-calculator h3{
+    color: #EBC048;
+}
+#calorie-calculator button[type ="button"], #calorie-calculator > div{
+    display: inline-block;
+ }
+.chart{
+    display: none;
+    width: 700px;
+    height: 500px;
+}
+
+#percentages{
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+#percentages li{
+    display: inline-block;
+    margin-right: 10px;
+    color: #347296;
+}
+.note{
+    font-size: 12px;
+    color: #ddd;
+}
+#customMacros:last-child{
+    color: #347296;
+}
+#macros-list, #grams-list{
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+}
+#grams-list li, #macros-list li{
+    margin-top: 10px;
+}
+#grams-list li{
+    color: #EB6F48;
+}
+#macros-list li{
+    font-weight: 600;
+    color: #EBC048;
+}
+#goals label,#pounds label{
+    display: inline-block;
+    margin-right: 50px;
+}
+.details{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #ddd;
+
+}
+.gender input,.weight input[type ="radio"]{
+    margin-right: 5px;
+}
+.gender label[for="male"], .weight label[for ="kg"]{
+    margin-right: 30px;
+}
+label[for ='weight'], label[for ='feet']{
+    margin-right: 20px;
+}
+input[type = "number"]{
+    border: 2px solid #1fbbff;
+    width: 90px;
+    height: 20px;
+    font-size: 16px;
+    padding: 3px 10px;
+    box-shadow: none;
+
+}
+
+input[type = "number"]:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+input[type = "number"]:valid{
+    border-color: forestgreen;
+}
+input[type = "number"]:placeholder-shown{
+    border-color: #1fbbff;
+}
+input[type = "number"]:focus:placeholder-shown{
+    border-color: #106184;
+}
+
+input[name = 'carbohydrates'],input[name = "protein"]{
+    margin-right: 60px;
+
+}
+label[for = "carbohydrates"],label[for = "protein"],label[for = "fats"]{
+    display: inline-block;
+}
+#customMacros h5{
+    margin-bottom: 0;
+}
+button[name = "previous"],button[name = "next"]{
+    position: absolute;
+    height: 35px;
+    width: 85px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: yellow;
+    font-weight: 500;
+    background-color: #347296;
+    border: 2px solid #4bc0e8;
+    margin-bottom: 10px;
+    transition: box-shadow 300ms ease-in-out, opacity 300ms ease-in-out;
+    box-shadow: 3px 3px 4px black;
+}
+button[name = "previous"]:focus,button[name = "next"]:focus{
+    background-color: #1978a8;
+}
+button[name = "previous"]:hover,button[name = "next"]:hover:not(:disabled){
+    opacity: 0.7;
+}
+button[name = "previous"]:disabled,button[name = "next"]:disabled{
+    opacity: .5;
+}
+button[name = "previous"]{
+    left:0;
+    bottom: 5px;
+
+}
+button[name = "next"]{
+    right:0;
+    bottom: 5px;
+}
+#group-3,#group-4{
+    margin-top:40%;
+}
+#submit-button{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 120px;
+    border: 3px solid #4bc0e8;
+    transition: opacity 500ms ease-in-out ;
+    background-color: black;
+    box-shadow: 3px 3px 4px black;
+}
+#submit-button:hover{
+    opacity: 0.7;
+}
+#submit-button a{
+    color: #00b4ef;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
+#sections ul{
+    list-style-type: none;
+    margin: auto;
+    padding-left: 0;
+}
+#sections ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+#sections ul li button{
+    height: 30px;
+    width: 110px;
+    box-shadow: 2px 2px 2px #151515;
+    font-weight: 500;
+    transition: box-shadow 300ms ease-in-out;
+    background-color: #242424;
+    color: #1fbbff;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+
+}
+#sections ul li button:hover{
+    box-shadow: 1px 1px 1px #8e8e8e;
+}
+#chart-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+#group-5{
+    align-self: baseline;
+}
+#goals{
+    margin-bottom: 50px;
+}
+.macros-grams-container{
+    text-align: center;
+}
+@media only screen and (max-width: 1660px) {
+    #chart-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        'form form'
+        'macroinfo chart'
+    ;
+        grid-row-gap: 40px;
+    }
+    .form-container{
+        grid-area: form;
+    }
+    #macro-count{
+        grid-area: macroinfo;
+    }
+    #group-5{
+        grid-area: chart;
+        justify-self: center;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .nutrition-sec{
+        background-size: cover !important;
+        background-image: url("../images/nutrition-medium.jpeg");
+    }
+}
+@media only screen and (max-width: 1342px) {
+    .banner-section {
+        height: 100vh;
+    }
+
+    .banner-section h1 {
+        top: 20%;
+    }
+
+    .banner-section p {
+        top: 35%;
+    }
+
+}
+@media only screen and (max-width: 1100px){
+    #chart-grid{
+        display: block;
+    }
+    .chart{
+        margin: auto;
+    }
+    #macro-count{
+        margin: 55px auto 40px;
+        width:400px;
+
+    }
+    #macro-count h2{
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    .details{
+        margin-top: 40px;
+    }
+    #macros-list li,#grams-list li{
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .macro-sec article{
+        padding-bottom: 40px;
+    }
+    .macro-summary{
+        margin-bottom: 100px;
+    }
+    .macro-summary h3{
+        font-size: 30px;
+    }
+    .banner-section section h1{
+        /*bottom:70%;*/
+    }
+    .banner-section section p{
+        bottom: 32%;
+        font-size: 23px;
+        width: 90%;
+    }
+    .carb-types{
+        display: block;
+    }
+    .protein-sec, .fat-sec{
+        display: block;
+        margin-top:60px
+    }
+    .fat-info,.protein-info {
+        padding-left: 40px;
+    }
+    .details{
+        width: 90%;
+        margin: 30px 0px 20px 40px;
+    }
+    .chart{
+        width:410px;
+        height: 300px;
+    }
+}
+@media only screen and (orientation: landscape){
+    #group-5{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .chart{
+        padding-top: 100px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .info {
+        padding-left: 10px;
+    }
+    .info p{
+        margin-left: 0;
+    }
+    .details{
+        margin: auto;
+        width:95%;
+    }
+    .details p{
+        font-size: 16px;
+    }
+    .macro-sec p{
+        font-size: 16px;
+    }
+    .macro-summary{
+        margin-left:10px;
+        margin-right: 5px;
+    }
+    .macro-summary p{
+        width: 95%;
+        font-size: 16px;
+
+    }
+    .carb-types div{
+        padding: 0 5px;
+    }
+    .carb-types div p{
+        margin-left: 0;
+    }
+    .protein-types ul, .fat-types ul{
+        padding-left: 10px;
+    }
+    .protein-info, .fat-info {
+        padding-left: 10px;
+    }
+    button[name = "previous"],button[name = "next"]{
+        bottom: 15px;
+    }
+    .banner-section section h1{
+        top:10%;
+        font-size:42px;
+        left: 2%;
+    }
+    .banner-section section p{
+        top: 20%;
+        font-size: 18px;
+        line-height: 32px;
+        width: 95%;
+        left: 2%;
+    }
+    #calorie-calculator{
+        height: 550px;
+    }
+    .control-buttons{
+        display: block;
+        height: 60px;
+        width: auto;
+        padding-left: 10px;
+    }
+    button[name="previous"]{
+        left: 15px;
+    }
+    button[name="next"]{
+        right:15px;
+    }
+    #group-2{
+        margin: 40px 10px;
+
+    }
+    input[name = 'carbohydrates'],input[name = "protein"], input[name = 'fats']{
+        margin-right: 17px;
+    }
+    #submit-button a{
+        font-size: 14px;
+    }
+    #sections ul li button{
+        width: 90px;
+        margin-top: 5px;
+    }
+    .details p{
+        padding-right: 10px;
+    }
+
+}
